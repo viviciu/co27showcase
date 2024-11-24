@@ -3,36 +3,48 @@
         { 
           "id": "products",
           "name": "name1",
-          "val": 1, 
+          "val": 10, 
           "description": "wheezing pink dust rn",
-          "img": "/imgs/roley.jpg.webp"
+          "img": "/imgs/roley.jpg.webp",
+          "group": "TRACK"
         },
         { 
           "id": "communications",
           "name": "name1",
-          "val": 1, 
+          "val": 10, 
           "description": "pixel pushers",
-          "img": "/imgs/roley.jpg.webp"
+          "img": "/imgs/roley.jpg.webp",
+          "group": "TRACK"
         },
         { 
           "id": "environments",
           "name": "name1",
-          "val": 1, 
+          "val": 10, 
           "description": "big brain",
-          "img": "/imgs/roley.jpg.webp"
+          "img": "/imgs/roley.jpg.webp",
+          "group": "TRACK"
         },
         { 
           "id": "viviana",
           "name": "name2",
-          "val": 10, 
+          "val": 1, 
           "description": "the fuck",
-          "img": "/imgs/roley.jpg.webp"
+          "img": "/imgs/roley.jpg.webp",
+          "group": "P"
         },
         { 
           "id": "melissa",
           "name": "name2",
-          "val": 10,
-          "img": "/imgs/roley.jpg.webp"
+          "val": 1,
+          "img": "/imgs/roley.jpg.webp",
+          "group": "C"
+        },
+        { 
+          "id": "emily",
+          "name": "name2",
+          "val": 1,
+          "img": "/imgs/roley.jpg.webp",
+          "group": "E"
         }
     ],
     "links": [
@@ -43,6 +55,10 @@
         {
             "source": "communications",
             "target": "melissa"
+        },
+        {
+            "source": "environments",
+            "target": "emily"
         }
     ]
 }

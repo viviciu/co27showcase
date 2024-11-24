@@ -13,16 +13,26 @@ import { UnrealBloomPass } from "three/examples/jsm/postprocessing/UnrealBloomPa
 const root = ReactDOM.createRoot(document.getElementById('graph'));
 
 const FocusGraph = () => {
-  
   const fgRef = useRef();
 
   useEffect(() => {
-    const bloomPass = new UnrealBloomPass();
-    bloomPass.strength = 0.5;
-    bloomPass.radius = 1;
-    bloomPass.threshold = 0;
-    fgRef.current.postProcessingComposer().addPass(bloomPass);
+    if (fgRef.current) {
+      const bloomPass = new UnrealBloomPass();
+      bloomPass.strength = 0.5;
+      bloomPass.radius = 1;
+      bloomPass.threshold = 0;
+      fgRef.current.postProcessingComposer().addPass(bloomPass);
+
+      
+    }
   }, []);
+
+  // Define a color mapping for groups
+  const groupColors = {
+    "P": "#ff0000", // Red
+    "C": "#00ff00", // Green
+    "E": "#0000ff", // Blue
+  };
 
   return (
     <ForceGraph3D
@@ -30,6 +40,7 @@ const FocusGraph = () => {
       backgroundColor="#000003"
       graphData={data}
       nodeAutoColorBy="group"
+      nodeColor={(node) => groupColors[node.group] || "#ffffff"} // Default to white if group not found
       // nodeThreeObject={(node) => {
       //   const sprite = new SpriteText(node.id);
       //   sprite.color = node.color;
@@ -39,25 +50,18 @@ const FocusGraph = () => {
 
       nodeLabel={(node) => `${node.description}`} // SENIOR QUOTES
       nodeThreeObjectExtend={true}
-      // nodeThreeObject={(node) => {
-      //   // extend link with text sprite
-      //   const sprite = new SpriteText(`${node.id}`);
-      //   sprite.color = "lightgrey";
-      //   sprite.textHeight = 5;
-      //   // Adjust the position of the sprite to be below the node
-      //   sprite.position.y -= 10; // Adjust this value as needed
-      //   return sprite;
-      // }}
+      OLD CODE
       nodeThreeObject={(node) => {
-        const imgTexture = new THREE.TextureLoader().load(node.img);
-        console.log(node.img);
-        imgTexture.colorSpace = THREE.SRGBColorSpace;
-        const material = new THREE.SpriteMaterial({ map: imgTexture });
-        const sprite = new THREE.Sprite(material);
-        sprite.scale.set(12, 12);
-
+        // extend link with text sprite
+        const sprite = new SpriteText(`${node.id}`);
+        sprite.color = "lightgrey";
+        sprite.textHeight = 5;
+        // Adjust the position of the sprite to be below the node
+        sprite.position.y -= 10; // Adjust this value as needed
         return sprite;
       }}
+      
+      
     />
   );
 };
