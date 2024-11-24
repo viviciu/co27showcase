@@ -2,36 +2,41 @@
     "nodes": [ 
         { 
           "id": "products",
-          "name": "name1",
+          "name": "products",
           "val": 1, 
           "description": "wheezing pink dust rn",
-          "img": "/imgs/roley.jpg.webp"
+          "img": "/imgs/hammer_and_pick.png"
         },
         { 
           "id": "communications",
-          "name": "name1",
+          "name": "communications",
           "val": 1, 
           "description": "pixel pushers",
-          "img": "/imgs/roley.jpg.webp"
+          "img": "/imgs/page_with_curl.png"
         },
         { 
           "id": "environments",
-          "name": "name1",
+          "name": "environments",
           "val": 1, 
           "description": "big brain",
-          "img": "/imgs/roley.jpg.webp"
+          "img": "/imgs/cd.png"
         },
         { 
           "id": "viviana",
-          "name": "name2",
           "val": 10, 
           "description": "the fuck",
-          "img": "/imgs/roley.jpg.webp"
+          "img": "/imgs/roley.jpg.webp",
+          "url": "https://www.vstaicu.me"
         },
         { 
           "id": "melissa",
-          "name": "name2",
           "val": 10,
+          "img": "/imgs/roley.jpg.webp"
+        },
+        { 
+          "id": "garett",
+          "val": 10, 
+          "description": "",
           "img": "/imgs/roley.jpg.webp"
         }
     ],
@@ -43,6 +48,10 @@
         {
             "source": "communications",
             "target": "melissa"
+        },
+        {
+            "source": "communications",
+            "target": "garett"
         }
     ]
 }

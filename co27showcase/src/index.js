@@ -3,71 +3,62 @@ import ReactDOM from 'react-dom/client';
 import ForceGraph3D from 'react-force-graph-3d'
 import SpriteText from "three-spritetext";
 import './index.css';
-import { useRef, useEffect } from "react";
-import App from './App';
 import reportWebVitals from './reportWebVitals';
 import data from "./data.json";
 import * as THREE from 'three';
-import { UnrealBloomPass } from "three/examples/jsm/postprocessing/UnrealBloomPass";
+
 
 const root = ReactDOM.createRoot(document.getElementById('graph'));
-
-const FocusGraph = () => {
-  
-  const fgRef = useRef();
-
-  useEffect(() => {
-    const bloomPass = new UnrealBloomPass();
-    bloomPass.strength = 0.5;
-    bloomPass.radius = 1;
-    bloomPass.threshold = 0;
-    fgRef.current.postProcessingComposer().addPass(bloomPass);
-  }, []);
-
-  return (
-    <ForceGraph3D
-      ref={fgRef}
-      backgroundColor="#000003"
-      graphData={data}
-      nodeAutoColorBy="group"
-      // nodeThreeObject={(node) => {
-      //   const sprite = new SpriteText(node.id);
-      //   sprite.color = node.color;
-      //   sprite.textHeight = 8;
-      //   return sprite;
-      // }}
-
-      nodeLabel={(node) => `${node.description}`} // SENIOR QUOTES
-      nodeThreeObjectExtend={true}
-      // nodeThreeObject={(node) => {
-      //   // extend link with text sprite
-      //   const sprite = new SpriteText(`${node.id}`);
-      //   sprite.color = "lightgrey";
-      //   sprite.textHeight = 5;
-      //   // Adjust the position of the sprite to be below the node
-      //   sprite.position.y -= 10; // Adjust this value as needed
-      //   return sprite;
-      // }}
-      nodeThreeObject={(node) => {
-        const imgTexture = new THREE.TextureLoader().load(node.img);
-        console.log(node.img);
-        imgTexture.colorSpace = THREE.SRGBColorSpace;
-        const material = new THREE.SpriteMaterial({ map: imgTexture });
-        const sprite = new THREE.Sprite(material);
-        sprite.scale.set(12, 12);
-
-        return sprite;
-      }}
-    />
-  );
-};
-
 
 
 
 root.render(
   <React.StrictMode>
-    <FocusGraph />
+    <ForceGraph3D
+      backgroundColor="#000003"
+      graphData={data}
+      nodeLabel={(node) => `${node.description}`} // SENIOR QUOTES
+      linkColor={() => "white"}
+      
+      // PORTFOLIO LINKS
+      onNodeClick={(node) => {
+        if (node.url) {
+          window.open(node.url, "_blank");
+        }
+      }}
+
+      // FORCE
+      // d3Force="link"
+      d3AlphaDecay={0.05}
+      d3VelocityDecay={0.2}
+      d3ForceLink={(link) => {
+        link.distance = 30; // Adjust this value to make links shorter
+      }}
+      d3ForceCharge={(charge) => {
+        charge.strength = -50; // Adjust this value to make nodes attract each other more
+      }}
+      
+      // IMGS
+      nodeThreeObject={(node) => {
+        const group = new THREE.Group();
+
+        // Create image sprite
+        const imgTexture = new THREE.TextureLoader().load(node.img);
+        const material = new THREE.SpriteMaterial({ map: imgTexture });
+        const sprite = new THREE.Sprite(material);
+        sprite.scale.set(12, 12);
+        group.add(sprite);
+
+        // Create text sprite
+        const textSprite = new SpriteText(node.name);
+        textSprite.color = "#ffffff";
+        textSprite.textHeight = 5;
+        textSprite.position.set(0, -15, 0); // Position text below the image
+        group.add(textSprite);
+
+        return group;
+      }}
+    />
   </React.StrictMode>
 );
 
