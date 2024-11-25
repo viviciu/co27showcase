@@ -1,6 +1,7 @@
 {
     "nodes": [ 
-        { 
+       
+    { 
           "id": "products",
           "name": "products",
           "val": 70, 
@@ -20,7 +21,7 @@
           "id": "environments",
           "name": "environments",
           "val": 70, 
-          "description": "big brain",
+          "description": "environments",
           "img": "/imgs/cd.png",
           "group": "TRACK"
         },
@@ -38,7 +39,7 @@
           "url": ""
         },
         { 
-          "id": "garett",
+          "id": "garrett",
           "val": 40, 
           "description": "",
           "img": "/imgs/roley.jpg.webp",
@@ -74,7 +75,8 @@
         }
     ],
     "links": [
-        {
+        
+      {
             "source": "products",
             "target": "viviana"
         },
