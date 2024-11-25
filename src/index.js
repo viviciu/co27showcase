@@ -19,7 +19,7 @@ const preloadImages = (nodes) => {
     }
   });
 };
-
+//textcomment
 // Preload images
 preloadImages(data.nodes);
 
