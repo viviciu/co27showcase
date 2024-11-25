@@ -1,0 +1,106 @@
+{
+    "nodes": [ 
+        { 
+          "id": "products",
+          "name": "products",
+          "val": 70, 
+          "description": "wheezing pink dust rn",
+          "img": "/imgs/hammer_and_pick.png",
+          "group": "TRACK"
+        },
+        { 
+          "id": "communications",
+          "name": "communications",
+          "val": 70, 
+          "description": "pixel pushers",
+          "img": "/imgs/computer.png",
+          "group": "TRACK"
+        },
+        { 
+          "id": "environments",
+          "name": "environments",
+          "val": 70, 
+          "description": "big brain",
+          "img": "/imgs/cd.png",
+          "group": "TRACK"
+        },
+        { 
+          "id": "viviana",
+          "val": 40, 
+          "description": "the fuck",
+          "img": "/imgs/roley.jpg.webp",
+          "url": "https://www.vstaicu.me"
+        },
+        { 
+          "id": "melissa",
+          "val": 40,
+          "img": "/imgs/roley.jpg.webp",
+          "url": ""
+        },
+        { 
+          "id": "garett",
+          "val": 40, 
+          "description": "",
+          "img": "/imgs/roley.jpg.webp",
+          "url": ""
+        },
+        { 
+          "id": "aru",
+          "val": 40, 
+          "description": "",
+          "img": "/imgs/roley.jpg.webp",
+          "url": ""
+        },
+        { 
+          "id": "maddie",
+          "val": 40, 
+          "description": "",
+          "img": "/imgs/roley.jpg.webp",
+          "url": ""
+        },
+        { 
+          "id": "serena",
+          "val": 40, 
+          "description": "",
+          "img": "/imgs/roley.jpg.webp",
+          "url": ""
+        },
+        { 
+          "id": "emily",
+          "val": 50, 
+          "description": "",
+          "img": "/imgs/roley.jpg.webp",
+          "url": ""
+        }
+    ],
+    "links": [
+        {
+            "source": "products",
+            "target": "viviana"
+        },
+        {
+            "source": "communications",
+            "target": "melissa"
+        },
+        {
+            "source": "communications",
+            "target": "garett"
+        },
+        {
+            "source": "communications",
+            "target": "aru"
+        },
+        {
+            "source": "communications",
+            "target": "maddie"
+        },
+        {
+            "source": "communications",
+            "target": "serena"
+        },
+        {
+            "source": "environments",
+            "target": "emily"
+        }
+    ]
+}
