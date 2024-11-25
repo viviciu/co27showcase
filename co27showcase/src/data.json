@@ -38,7 +38,7 @@
           "url": ""
         },
         { 
-          "id": "garett",
+          "id": "garrett",
           "val": 40, 
           "description": "",
           "img": "/imgs/roley.jpg.webp",
@@ -84,7 +84,7 @@
         },
         {
             "source": "communications",
-            "target": "garett"
+            "target": "garrett"
         },
         {
             "source": "communications",
