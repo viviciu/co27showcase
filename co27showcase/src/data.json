@@ -3,41 +3,74 @@
         { 
           "id": "products",
           "name": "products",
-          "val": 1, 
+          "val": 70, 
           "description": "wheezing pink dust rn",
-          "img": "/imgs/hammer_and_pick.png"
+          "img": "/imgs/hammer_and_pick.png",
+          "group": "TRACK"
         },
         { 
           "id": "communications",
           "name": "communications",
-          "val": 1, 
+          "val": 70, 
           "description": "pixel pushers",
-          "img": "/imgs/page_with_curl.png"
+          "img": "/imgs/computer.png",
+          "group": "TRACK"
         },
         { 
           "id": "environments",
           "name": "environments",
-          "val": 1, 
+          "val": 70, 
           "description": "big brain",
-          "img": "/imgs/cd.png"
+          "img": "/imgs/cd.png",
+          "group": "TRACK"
         },
         { 
           "id": "viviana",
-          "val": 10, 
+          "val": 40, 
           "description": "the fuck",
           "img": "/imgs/roley.jpg.webp",
           "url": "https://www.vstaicu.me"
         },
         { 
           "id": "melissa",
-          "val": 10,
-          "img": "/imgs/roley.jpg.webp"
+          "val": 40,
+          "img": "/imgs/roley.jpg.webp",
+          "url": ""
         },
         { 
           "id": "garett",
-          "val": 10, 
+          "val": 40, 
           "description": "",
-          "img": "/imgs/roley.jpg.webp"
+          "img": "/imgs/roley.jpg.webp",
+          "url": ""
+        },
+        { 
+          "id": "aru",
+          "val": 40, 
+          "description": "",
+          "img": "/imgs/roley.jpg.webp",
+          "url": ""
+        },
+        { 
+          "id": "maddie",
+          "val": 40, 
+          "description": "",
+          "img": "/imgs/roley.jpg.webp",
+          "url": ""
+        },
+        { 
+          "id": "serena",
+          "val": 40, 
+          "description": "",
+          "img": "/imgs/roley.jpg.webp",
+          "url": ""
+        },
+        { 
+          "id": "emily",
+          "val": 50, 
+          "description": "",
+          "img": "/imgs/roley.jpg.webp",
+          "url": ""
         }
     ],
     "links": [
@@ -52,6 +85,22 @@
         {
             "source": "communications",
             "target": "garett"
+        },
+        {
+            "source": "communications",
+            "target": "aru"
+        },
+        {
+            "source": "communications",
+            "target": "maddie"
+        },
+        {
+            "source": "communications",
+            "target": "serena"
+        },
+        {
+            "source": "environments",
+            "target": "emily"
         }
     ]
 }

@@ -1,68 +1,88 @@
-import React from 'react';
-import ReactDOM from 'react-dom/client';
-import ForceGraph3D from 'react-force-graph-3d'
-import SpriteText from "three-spritetext";
-import './index.css';
-import reportWebVitals from './reportWebVitals';
+import React from "react";
+import ReactDOM from "react-dom/client";
+import ForceGraph2D from "react-force-graph-2d";
+import "./index.css";
+import reportWebVitals from "./reportWebVitals";
 import data from "./data.json";
-import * as THREE from 'three';
 
+const root = ReactDOM.createRoot(document.getElementById("graph"));
 
-const root = ReactDOM.createRoot(document.getElementById('graph'));
+// Preload images and store them in a cache
+const imageCache = {};
 
+const preloadImages = (nodes) => {
+  nodes.forEach((node) => {
+    if (node.img && !imageCache[node.img]) {
+      const img = new Image();
+      img.src = node.img;
+      imageCache[node.img] = img;
+    }
+  });
+};
 
+// Preload images
+preloadImages(data.nodes);
+
+const nodePaint = (node, ctx, globalScale) => {
+  const img = imageCache[node.img];
+  const size = (node.val || 30) / globalScale; // Adjust the size as needed
+
+  if (img) {
+    ctx.drawImage(img, node.x - size / 2, node.y - size / 2, size, size);
+  }
+
+  node.__bckgDimensions = [size, size]; // to re-use in nodePointerAreaPaint
+};
+
+const nodeLabelPaint = (node, ctx, globalScale) => {
+  if (node.group === "TRACK") {
+    // Draws label only for TRACK nodes
+    const label = node.description;
+    const fontSize = 12 / globalScale;
+    ctx.font = `${fontSize}px Sans-Serif`;
+    ctx.textAlign = "center";
+    ctx.textBaseline = "middle";
+    ctx.fillStyle = "black"; // Change this to your desired text color
+    ctx.fillText(label, node.x, node.y + 30); // Adjust the position as needed
+  }
+};
+
+const nodePointerAreaPaint = (node, color, ctx) => {
+  ctx.fillStyle = color;
+  const bckgDimensions = node.__bckgDimensions;
+  bckgDimensions &&
+    ctx.fillRect(
+      node.x - bckgDimensions[0] / 2,
+      node.y - bckgDimensions[1] / 2,
+      ...bckgDimensions
+    );
+};
 
 root.render(
   <React.StrictMode>
-    <ForceGraph3D
-      backgroundColor="#000003"
+    <ForceGraph2D
+      backgroundColor="#ffffff"
       graphData={data}
-      nodeLabel={(node) => `${node.description}`} // SENIOR QUOTES
-      linkColor={() => "white"}
-      
-      // PORTFOLIO LINKS
+      nodeLabel={(node) => (node.group !== "TRACK" ? `${node.id}` : "")} // SENIOR QUOTES: set node.description. NAMES: set node.id. if node is not a track
+      linkColor={() => "black"}
       onNodeClick={(node) => {
         if (node.url) {
           window.open(node.url, "_blank");
         }
       }}
-
-      // FORCE
-      // d3Force="link"
+      nodeCanvasObject={(node, ctx, globalScale) => {
+        nodePaint(node, ctx, globalScale);
+        nodeLabelPaint(node, ctx, globalScale); // labels underneath items
+      }}
+      nodePointerAreaPaint={nodePointerAreaPaint}
+      d3Force="link"
       d3AlphaDecay={0.05}
       d3VelocityDecay={0.2}
       d3ForceLink={(link) => {
-        link.distance = 30; // Adjust this value to make links shorter
-      }}
-      d3ForceCharge={(charge) => {
-        charge.strength = -50; // Adjust this value to make nodes attract each other more
-      }}
-      
-      // IMGS
-      nodeThreeObject={(node) => {
-        const group = new THREE.Group();
-
-        // Create image sprite
-        const imgTexture = new THREE.TextureLoader().load(node.img);
-        const material = new THREE.SpriteMaterial({ map: imgTexture });
-        const sprite = new THREE.Sprite(material);
-        sprite.scale.set(12, 12);
-        group.add(sprite);
-
-        // Create text sprite
-        const textSprite = new SpriteText(node.name);
-        textSprite.color = "#ffffff";
-        textSprite.textHeight = 5;
-        textSprite.position.set(0, -15, 0); // Position text below the image
-        group.add(textSprite);
-
-        return group;
+        link.distance = 100; // Adjust this value to change the link length
       }}
     />
   </React.StrictMode>
 );
 
-// If you want to start measuring performance in your app, pass a function
-// to log results (for example: reportWebVitals(console.log))
-// or send to an analytics endpoint. Learn more: https://bit.ly/CRA-vitals
 reportWebVitals();
