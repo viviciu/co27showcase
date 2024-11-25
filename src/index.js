@@ -33,7 +33,7 @@ const nodePaint = (node, ctx, globalScale) => {
 
   node.__bckgDimensions = [size, size]; // to re-use in nodePointerAreaPaint
 };
-
+// TEST COMMENT
 const nodeLabelPaint = (node, ctx, globalScale) => {
   if (node.group === "TRACK") {
     // Draws label only for TRACK nodes
@@ -43,7 +43,7 @@ const nodeLabelPaint = (node, ctx, globalScale) => {
     ctx.textAlign = "center";
     ctx.textBaseline = "middle";
     ctx.fillStyle = "black"; // Change this to your desired text color
-    ctx.fillText(label, node.x, node.y + 30); // Adjust the position as needed
+    ctx.fillText(label, node.x, node.y + 20); // Adjust the position as needed
   }
 };
 
