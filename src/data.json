@@ -27,55 +27,244 @@
         },
         { 
           "id": "viviana",
-          "val": 40, 
+          "val": 50, 
           "description": "the fuck",
           "img": "/imgs/roley.jpg.webp",
           "url": "https://www.vstaicu.me"
         },
         { 
           "id": "melissa",
-          "val": 40,
-          "img": "/imgs/roley.jpg.webp",
-          "url": ""
-        },
-        { 
-          "id": "garrett",
-          "val": 40, 
-          "description": "",
+          "val": 50,
           "img": "/imgs/roley.jpg.webp",
           "url": ""
         },
         { 
           "id": "aru",
-          "val": 40, 
+          "val": 50, 
           "description": "",
           "img": "/imgs/roley.jpg.webp",
           "url": ""
         },
         { 
           "id": "maddie",
-          "val": 40, 
+          "val": 50, 
           "description": "",
-          "img": "/imgs/roley.jpg.webp",
+          "img": "/imgs/people/maddie.png",
           "url": ""
         },
         { 
           "id": "serena",
-          "val": 40, 
+          "val": 50, 
           "description": "",
-          "img": "/imgs/roley.jpg.webp",
+          "img": "/imgs/people/serena.png",
+          "url": ""
+        },
+        { 
+          "id": "amy",
+          "val": 50, 
+          "description": "",
+          "img": "/imgs/people/amy.jpeg",
+          "url": ""
+        },
+        { 
+          "id": "arden",
+          "val": 50, 
+          "description": "",
+          "img": "/imgs/people/",
+          "url": ""
+        },
+        { 
+          "id": "asope",
+          "val": 50, 
+          "description": "",
+          "img": "/imgs/people/asope.png",
+          "url": ""
+        },
+        { 
+          "id": "audrey",
+          "val": 50, 
+          "description": "",
+          "img": "/imgs/people/audrey.png",
+          "url": ""
+        },
+        { 
+          "id": "cameron",
+          "val": 50, 
+          "description": "",
+          "img": "/imgs/people/cameron.jpeg",
+          "url": ""
+        },
+        { 
+          "id": "daniel",
+          "val": 50, 
+          "description": "",
+          "img": "/imgs/people/Daniel.jpeg",
           "url": ""
         },
         { 
           "id": "emily",
           "val": 50, 
           "description": "",
-          "img": "/imgs/roley.jpg.webp",
+          "img": "/imgs/people/emily.png",
+          "url": ""
+        },
+        { 
+          "id": "felicia",
+          "val": 50, 
+          "description": "",
+          "img": "/imgs/people/felicia.png",
+          "url": ""
+        },
+        { 
+          "id": "garrett",
+          "val": 50, 
+          "description": "",
+          "img": "/imgs/people/garrett.png",
+          "url": ""
+        },
+        { 
+          "id": "grace",
+          "val": 50, 
+          "description": "",
+          "img": "/imgs/people/grace.png",
+          "url": ""
+        },
+        { 
+          "id": "hannah",
+          "val": 50, 
+          "description": "/imgs/people/hannah.jpeg",
+          "img": "",
+          "url": ""
+        },
+        { 
+          "id": "jackie",
+          "val": 50, 
+          "description": "",
+          "img": "/imgs/people/jackie.jpeg",
+          "url": ""
+        },
+        { 
+          "id": "jaden",
+          "val": 50, 
+          "description": "",
+          "img": "/imgs/people/jaden.png",
+          "url": ""
+        },
+        { 
+          "id": "jennie",
+          "val": 50, 
+          "description": "",
+          "img": "/imgs/people/jennie.jpeg",
+          "url": ""
+        },
+        { 
+          "id": "joy",
+          "val": 50, 
+          "description": "",
+          "img": "/imgs/people/joy.jpeg",
+          "url": ""
+        },
+        { 
+          "id": "karis",
+          "val": 50, 
+          "description": "",
+          "img": "/imgs/people/karis.png",
+          "url": ""
+        },
+        { 
+          "id": "kenneth",
+          "val": 50, 
+          "description": "",
+          "img": "/imgs/people/kenneth.jpeg",
+          "url": ""
+        },
+        { 
+          "id": "kevin",
+          "val": 50, 
+          "description": "",
+          "img": "/imgs/people/kevin.jpeg",
+          "url": ""
+        },
+        { 
+          "id": "luke",
+          "val": 50, 
+          "description": "",
+          "img": "/imgs/people/luke.jpeg",
+          "url": ""
+        },
+        { 
+          "id": "mark",
+          "val": 50, 
+          "description": "",
+          "img": "/imgs/people/mark.jpeg",
+          "url": ""
+        },
+        { 
+          "id": "michele",
+          "val": 50, 
+          "description": "",
+          "img": "/imgs/people/michele.png",
+          "url": ""
+        },
+        { 
+          "id": "phil",
+          "val": 50, 
+          "description": "",
+          "img": "/imgs/people/phil.png",
+          "url": ""
+        },
+        { 
+          "id": "rowan",
+          "val": 50, 
+          "description": "",
+          "img": "/imgs/people/rowan.png",
+          "url": ""
+        },
+        { 
+          "id": "sonya",
+          "val": 50, 
+          "description": "",
+          "img": "/imgs/people/sonya.jpeg",
+          "url": ""
+        },
+        { 
+          "id": "",
+          "val": 50, 
+          "description": "",
+          "img": "",
+          "url": ""
+        },
+        { 
+          "id": "",
+          "val": 50, 
+          "description": "",
+          "img": "",
+          "url": ""
+        },
+        { 
+          "id": "",
+          "val": 50, 
+          "description": "",
+          "img": "",
           "url": ""
         }
+        
+        
     ],
     "links": [
         
+      {
+"source": "products",
+"target":"communications"
+      },
+      {
+"source": "communications",
+"target":"environments"
+      },
+      {
+"source": "environments",
+"target":"products"
+      },
       {
             "source": "products",
             "target": "viviana"
@@ -101,8 +290,101 @@
             "target": "serena"
         },
         {
+            "source": "communications",
+            "target": "amy"
+        },
+        {
+            "source": "communications",
+            "target": "arden"
+        },
+        {
+            "source": "communications",
+            "target": "audrey"
+        },
+        {
+            "source": "communications",
+            "target": "garrett"
+        },
+        {
+            "source": "communications",
+            "target": "jackie"
+        },
+        {
+            "source": "communications",
+            "target": "hannah"
+        },
+        {
+            "source": "communications",
+            "target": "jennie"
+        },
+        {
+            "source": "communications",
+            "target": "jaden"
+        },
+        {
+            "source": "communications",
+            "target": "joy"
+        },
+        {
+            "source": "communications",
+            "target": "karis"
+        },
+        {
+            "source": "communications",
+            "target": "michele"
+        },
+        {
+            "source": "communications",
+            "target": "sonya"
+        },
+        {
+            "source": "products",
+            "target": "asope"
+        },
+        {
+            "source": "products",
+            "target": "cameron"
+        },
+        {
+            "source": "products",
+            "target": "daniel"
+        },
+        {
+            "source": "products",
+            "target": "felicia"
+        },
+        {
+            "source": "products",
+            "target": "grace"
+        },
+        {
+            "source": "products",
+            "target": "kenneth"
+        },
+        {
+            "source": "products",
+            "target": "kevin"
+        },
+        {
+            "source": "products",
+            "target": "luke"
+        },
+        {
+            "source": "products",
+            "target": "mark"
+        },
+        {
+            "source": "products",
+            "target": "phil"
+        },
+        {
+            "source": "products",
+            "target": "rowan"
+        },
+        {
             "source": "environments",
             "target": "emily"
         }
+        
     ]
 }
