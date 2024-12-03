@@ -23,6 +23,9 @@ const preloadImages = (nodes) => {
 // Preload images
 preloadImages(data.nodes);
 
+
+// VERSION 1
+
 const nodePaint = (node, ctx, globalScale) => {
   const img = imageCache[node.img];
   const size = (node.val || 30) / globalScale; // Adjust the size as needed
@@ -33,6 +36,38 @@ const nodePaint = (node, ctx, globalScale) => {
 
   node.__bckgDimensions = [size, size]; // to re-use in nodePointerAreaPaint
 };
+
+
+// VERSION 2
+
+// const nodePaint = (node, ctx, globalScale) => {
+//   const img = imageCache[node.img];
+//   if (img) {
+//     const width = (img.naturalWidth || 12) / globalScale; // Use natural width if available, otherwise default to 12
+//     const height = (img.naturalHeight || 12) / globalScale; // Use natural height if available, otherwise default to 12
+
+//     ctx.drawImage(img, node.x - width / 2, node.y - height / 2, width, height);
+
+//     node.__bckgDimensions = [width, height]; // to re-use in nodePointerAreaPaint
+//   }
+// };
+
+
+// VERSION 3
+// const nodePaint = (node, ctx, globalScale) => {
+//   const img = imageCache[node.img];
+//   if (img) {
+//     const scaleFactor = 0.1; // Adjust this value to scale the images
+//     const width = (img.naturalWidth * scaleFactor) / globalScale;
+//     const height = (img.naturalHeight * scaleFactor) / globalScale;
+
+//     ctx.drawImage(img, node.x - width / 2, node.y - height / 2, width, height);
+
+//     node.__bckgDimensions = [width, height]; // to re-use in nodePointerAreaPaint
+//   }
+// };
+
+
 // TEST COMMENT
 const nodeLabelPaint = (node, ctx, globalScale) => {
   if (node.group === "TRACK") {
@@ -63,7 +98,7 @@ const FocusGraph = () => {
 
   useEffect(() => {
     if (fgRef.current) {
-      fgRef.current.zoom(4); // Set the initial zoom level (2x zoom)
+      fgRef.current.zoom(4.5); // Set the initial zoom level (2x zoom)
     }
   }, []);
 
