@@ -21,7 +21,7 @@
           "id": "environments",
           "name": "environments",
           "val": 70, 
-          "description": "environments",
+          "description": "¿ environments ?",
           "img": "/imgs/cd.png",
           "group": "TRACK"
         },
@@ -29,110 +29,110 @@
           "id": "viviana",
           "val": 50, 
           "description": "the fuck",
-          "img": "/imgs/roley.jpg.webp",
+          "img": "/imgs/roley.jpeg.webp",
           "url": "https://www.vstaicu.me"
         },
         { 
           "id": "melissa",
           "val": 50,
-          "img": "/imgs/roley.jpg.webp",
+          "img": "/imgs/roley.jpeg.webp",
           "url": ""
         },
         { 
           "id": "aru",
           "val": 50, 
           "description": "",
-          "img": "/imgs/roley.jpg.webp",
+          "img": "/imgs/roley.jpeg.webp",
           "url": ""
         },
         { 
           "id": "maddie",
           "val": 50, 
           "description": "",
-          "img": "/imgs/people/maddie.png",
+          "img": "/imgs/people2/maddie.jpeg",
           "url": ""
         },
         { 
           "id": "serena",
           "val": 50, 
           "description": "",
-          "img": "/imgs/people/serena.png",
+          "img": "/imgs/people2/serena.jpeg",
           "url": ""
         },
         { 
           "id": "amy",
           "val": 50, 
           "description": "",
-          "img": "/imgs/people/amy.jpeg",
+          "img": "/imgs/people2/amy.jpeg",
           "url": ""
         },
         { 
           "id": "arden",
           "val": 50, 
           "description": "",
-          "img": "/imgs/people/",
+          "img": "/imgs/people2/",
           "url": ""
         },
         { 
           "id": "asope",
           "val": 50, 
           "description": "",
-          "img": "/imgs/people/asope.png",
+          "img": "/imgs/people2/asope.jpeg",
           "url": ""
         },
         { 
           "id": "audrey",
           "val": 50, 
           "description": "",
-          "img": "/imgs/people/audrey.png",
+          "img": "/imgs/people2/audrey.jpeg",
           "url": ""
         },
         { 
           "id": "cameron",
           "val": 50, 
           "description": "",
-          "img": "/imgs/people/cameron.jpeg",
+          "img": "/imgs/people2/cameron.jpeg",
           "url": ""
         },
         { 
           "id": "daniel",
           "val": 50, 
           "description": "",
-          "img": "/imgs/people/Daniel.jpeg",
+          "img": "/imgs/people2/Daniel.jpeg",
           "url": ""
         },
         { 
           "id": "emily",
           "val": 50, 
           "description": "",
-          "img": "/imgs/people/emily.png",
+          "img": "/imgs/people2/emily.jpeg",
           "url": ""
         },
         { 
           "id": "felicia",
           "val": 50, 
           "description": "",
-          "img": "/imgs/people/felicia.png",
+          "img": "/imgs/people2/felicia.jpeg",
           "url": ""
         },
         { 
           "id": "garrett",
           "val": 50, 
           "description": "",
-          "img": "/imgs/people/garrett.png",
+          "img": "/imgs/people2/garrett.jpeg",
           "url": ""
         },
         { 
           "id": "grace",
           "val": 50, 
           "description": "",
-          "img": "/imgs/people/grace.png",
+          "img": "/imgs/people2/grace.jpeg",
           "url": ""
         },
         { 
           "id": "hannah",
           "val": 50, 
-          "description": "/imgs/people/hannah.jpeg",
+          "description": "/imgs/people2/hannah.jpeg",
           "img": "",
           "url": ""
         },
@@ -140,91 +140,91 @@
           "id": "jackie",
           "val": 50, 
           "description": "",
-          "img": "/imgs/people/jackie.jpeg",
+          "img": "/imgs/people2/jackie.jpeg",
           "url": ""
         },
         { 
           "id": "jaden",
           "val": 50, 
           "description": "",
-          "img": "/imgs/people/jaden.png",
+          "img": "/imgs/people2/jaden.jpeg",
           "url": ""
         },
         { 
           "id": "jennie",
           "val": 50, 
           "description": "",
-          "img": "/imgs/people/jennie.jpeg",
+          "img": "/imgs/people2/jennie.jpeg",
           "url": ""
         },
         { 
           "id": "joy",
           "val": 50, 
           "description": "",
-          "img": "/imgs/people/joy.jpeg",
+          "img": "/imgs/people2/joy.jpeg",
           "url": ""
         },
         { 
           "id": "karis",
           "val": 50, 
           "description": "",
-          "img": "/imgs/people/karis.png",
+          "img": "/imgs/people2/karis.jpeg",
           "url": ""
         },
         { 
           "id": "kenneth",
           "val": 50, 
           "description": "",
-          "img": "/imgs/people/kenneth.jpeg",
+          "img": "/imgs/people2/kenneth.jpeg",
           "url": ""
         },
         { 
           "id": "kevin",
           "val": 50, 
           "description": "",
-          "img": "/imgs/people/kevin.jpeg",
+          "img": "/imgs/people2/kevin.jpeg",
           "url": ""
         },
         { 
           "id": "luke",
           "val": 50, 
           "description": "",
-          "img": "/imgs/people/luke.jpeg",
+          "img": "/imgs/people2/luke.jpeg",
           "url": ""
         },
         { 
           "id": "mark",
           "val": 50, 
           "description": "",
-          "img": "/imgs/people/mark.jpeg",
+          "img": "/imgs/people2/mark.jpeg",
           "url": ""
         },
         { 
           "id": "michele",
           "val": 50, 
           "description": "",
-          "img": "/imgs/people/michele.png",
+          "img": "/imgs/people2/michele.jpeg",
           "url": ""
         },
         { 
           "id": "phil",
           "val": 50, 
           "description": "",
-          "img": "/imgs/people/phil.png",
+          "img": "/imgs/people2/phil.jpeg",
           "url": ""
         },
         { 
           "id": "rowan",
           "val": 50, 
           "description": "",
-          "img": "/imgs/people/rowan.png",
+          "img": "/imgs/people2/rowan.jpeg",
           "url": ""
         },
         { 
           "id": "sonya",
           "val": 50, 
           "description": "",
-          "img": "/imgs/people/sonya.jpeg",
+          "img": "/imgs/people2/sonya.jpeg",
           "url": ""
         },
         { 
