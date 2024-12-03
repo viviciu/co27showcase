@@ -23,16 +23,69 @@ const preloadImages = (nodes) => {
 // Preload images
 preloadImages(data.nodes);
 
+
+// VERSION 1
+
+// const nodePaint = (node, ctx, globalScale) => {
+//   const img = imageCache[node.img];
+//   const size = (node.val || 30) / globalScale; // Adjust the size as needed
+
+//   if (img) {
+//     ctx.drawImage(img, node.x - size / 2, node.y - size / 2, size, size);
+//   }
+
+//   node.__bckgDimensions = [size, size]; // to re-use in nodePointerAreaPaint
+// };
+
+// VERSION 1.1
+
+// const nodePaint = (node, ctx, globalScale) => {
+//   const img = imageCache[node.img];
+//   const size = (node.val / 4); // Adjust the size as needed
+
+//   if (img) {
+//     ctx.drawImage(img, node.x - size / 2, node.y - size / 2, size, size);
+//   }
+
+//   node.__bckgDimensions = [size, size]; // to re-use in nodePointerAreaPaint
+// };
+
+
+// VERSION 2
+
+// const nodePaint = (node, ctx, globalScale) => {
+//   const img = imageCache[node.img];
+//   if (img) {
+//     const width = (img.naturalWidth || 12) / globalScale; // Use natural width if available, otherwise default to 12
+//     const height = (img.naturalHeight || 12) / globalScale; // Use natural height if available, otherwise default to 12
+
+//     ctx.drawImage(img, node.x - width / 2, node.y - height / 2, width, height);
+
+//     node.__bckgDimensions = [width, height]; // to re-use in nodePointerAreaPaint
+//   }
+// };
+
+
+// VERSION 3
 const nodePaint = (node, ctx, globalScale) => {
   const img = imageCache[node.img];
-  const size = (node.val || 30) / globalScale; // Adjust the size as needed
-
   if (img) {
-    ctx.drawImage(img, node.x - size / 2, node.y - size / 2, size, size);
-  }
+    let scaleFactor = 0.1; // Default scale factor for images
 
-  node.__bckgDimensions = [size, size]; // to re-use in nodePointerAreaPaint
+    // Adjust scale factor for nodes in the "TRACK" group
+    if (node.group === "TRACK") {
+      scaleFactor = 0.6; // Increase the scale factor for "TRACK" nodes
+    }
+    const width = (img.naturalWidth * scaleFactor) / 5;
+    const height = (img.naturalHeight * scaleFactor) / 5;
+
+    ctx.drawImage(img, node.x - width / 2, node.y - height / 2, width, height);
+
+    node.__bckgDimensions = [width, height]; // to re-use in nodePointerAreaPaint
+  }
 };
+
+
 // TEST COMMENT
 const nodeLabelPaint = (node, ctx, globalScale) => {
   if (node.group === "TRACK") {
@@ -43,7 +96,7 @@ const nodeLabelPaint = (node, ctx, globalScale) => {
     ctx.textAlign = "center";
     ctx.textBaseline = "middle";
     ctx.fillStyle = "black"; // Change this to your desired text color
-    ctx.fillText(label, node.x, node.y + 20); // Adjust the position as needed
+    ctx.fillText(label, node.x, node.y + 15); // Adjust the position as needed
   }
 };
 
@@ -63,7 +116,7 @@ const FocusGraph = () => {
 
   useEffect(() => {
     if (fgRef.current) {
-      fgRef.current.zoom(4); // Set the initial zoom level (2x zoom)
+      fgRef.current.zoom(4.5); // Set the initial zoom level (2x zoom)
     }
   }, []);
 
