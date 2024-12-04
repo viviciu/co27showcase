@@ -56,14 +56,14 @@
           "id": "serena",
           "val": 50, 
           "description": "",
-          "img": "/imgs/people2/serena.jpeg",
+          "img": "/imgs/people3/serena.png",
           "url": ""
         },
         { 
           "id": "amy",
           "val": 50, 
           "description": "",
-          "img": "/imgs/people2/amy.jpeg",
+          "img": "/imgs/people3/amy.png",
           "url": ""
         },
         { 
@@ -91,7 +91,7 @@
           "id": "cameron",
           "val": 50, 
           "description": "",
-          "img": "/imgs/people2/cameron.jpeg",
+          "img": "/imgs/people3/cameron.png",
           "url": ""
         },
         { 
@@ -120,7 +120,7 @@
           "val": 50, 
           "description": "",
           "img": "/imgs/people2/garrett.jpeg",
-          "url": ""
+          "url": "https://www.garrettlee.me"
         },
         { 
           "id": "grace",
@@ -132,7 +132,7 @@
         { 
           "id": "hannah",
           "val": 50, 
-          "description": "/imgs/people2/hannah.jpeg",
+          "description": "/imgs/people3/hannah.png",
           "img": "",
           "url": ""
         },
@@ -168,7 +168,7 @@
           "id": "karis",
           "val": 50, 
           "description": "",
-          "img": "/imgs/people2/karis.jpeg",
+          "img": "/imgs/people3/karis.png",
           "url": ""
         },
         { 
@@ -217,7 +217,7 @@
           "id": "rowan",
           "val": 50, 
           "description": "",
-          "img": "/imgs/people2/rowan.jpeg",
+          "img": "/imgs/people3/rowan.png",
           "url": ""
         },
         { 
@@ -228,24 +228,24 @@
           "url": ""
         },
         { 
-          "id": "",
+          "id": "kyla",
           "val": 50, 
           "description": "",
-          "img": "",
+          "img": "/imgs/people3/kyla.png",
           "url": ""
         },
         { 
-          "id": "",
+          "id": "sam",
           "val": 50, 
           "description": "",
-          "img": "",
+          "img": "/imgs/people3/sam.png",
           "url": ""
         },
         { 
-          "id": "",
+          "id": "zeqe",
           "val": 50, 
           "description": "",
-          "img": "",
+          "img": "/imgs/people3/zeqe.png",
           "url": ""
         }
         
@@ -303,10 +303,6 @@
         },
         {
             "source": "communications",
-            "target": "garrett"
-        },
-        {
-            "source": "communications",
             "target": "jackie"
         },
         {
@@ -336,6 +332,14 @@
         {
             "source": "communications",
             "target": "sonya"
+        },
+        {
+            "source": "communications",
+            "target": "kyla"
+        },
+        {
+            "source": "communications",
+            "target": "sam"
         },
         {
             "source": "products",
@@ -384,7 +388,12 @@
         {
             "source": "environments",
             "target": "emily"
+        },
+        {
+            "source": "environments",
+            "target": "zeqe"
         }
+        
         
     ]
 }
