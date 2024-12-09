@@ -343,6 +343,10 @@
             "target": "amy"
         },
         {
+            "source": "communications",
+            "target": "wendy"
+        },
+        {
             "source": "products",
             "target": "gauri"
         },
