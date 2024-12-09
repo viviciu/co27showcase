@@ -343,7 +343,7 @@
             "target": "amy"
         },
         {
-            "source": "communications",
+            "source": "products",
             "target": "gauri"
         },
         {
@@ -375,7 +375,7 @@
             "target": "jaden"
         },
         {
-            "source": "communications",
+            "source": "environments",
             "target": "joy"
         },
         {
