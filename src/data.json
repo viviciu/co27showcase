@@ -152,8 +152,8 @@
         { 
           "id": "hannah",
           "val": 50, 
-          "description": "/imgs/people3/hannah.png",
-          "img": "",
+          "description": "",
+          "img": "/imgs/people3/hannah.png",
           "url": ""
         },
         { 
