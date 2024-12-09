@@ -29,27 +29,33 @@
           "id": "viviana",
           "val": 50, 
           "description": "the fuck",
-          "img": "/imgs/roley.jpeg.webp",
+          "img": "/imgs/people3/viviana.png",
           "url": "https://www.vstaicu.me"
         },
         { 
           "id": "melissa",
           "val": 50,
-          "img": "/imgs/roley.jpeg.webp",
+          "img": "/imgs/people3/melissa.png",
+          "url": ""
+        },
+        { 
+          "id": "wendy",
+          "val": 50,
+          "img": "/imgs/people3/wendy.png",
           "url": ""
         },
         { 
           "id": "aru",
           "val": 50, 
           "description": "",
-          "img": "/imgs/roley.jpeg.webp",
+          "img": "/imgs/people3/aru.png",
           "url": ""
         },
         { 
           "id": "maddie",
           "val": 50, 
           "description": "",
-          "img": "/imgs/people2/maddie.jpeg",
+          "img": "/imgs/people3/maddie.png",
           "url": ""
         },
         { 
@@ -57,6 +63,13 @@
           "val": 50, 
           "description": "",
           "img": "/imgs/people3/serena.png",
+          "url": ""
+        },
+        { 
+          "id": "rebecca",
+          "val": 50, 
+          "description": "",
+          "img": "/imgs/people3/rebecca.png",
           "url": ""
         },
         { 
@@ -70,21 +83,21 @@
           "id": "arden",
           "val": 50, 
           "description": "",
-          "img": "/imgs/people2/",
+          "img": "/imgs/people3/arden.png",
           "url": ""
         },
         { 
           "id": "asope",
           "val": 50, 
           "description": "",
-          "img": "/imgs/people2/asope.jpeg",
+          "img": "/imgs/people3/asope.png",
           "url": ""
         },
         { 
           "id": "audrey",
           "val": 50, 
           "description": "",
-          "img": "/imgs/people2/audrey.jpeg",
+          "img": "/imgs/people3/audrey.png",
           "url": ""
         },
         { 
@@ -98,35 +111,42 @@
           "id": "daniel",
           "val": 50, 
           "description": "",
-          "img": "/imgs/people2/Daniel.jpeg",
+          "img": "/imgs/people3/Daniel.png",
           "url": ""
         },
         { 
           "id": "emily",
           "val": 50, 
           "description": "",
-          "img": "/imgs/people2/emily.jpeg",
+          "img": "/imgs/people3/emily.png",
           "url": ""
         },
         { 
           "id": "felicia",
           "val": 50, 
           "description": "",
-          "img": "/imgs/people2/felicia.jpeg",
+          "img": "/imgs/people3/felicia.png",
+          "url": ""
+        },
+        { 
+          "id": "gauri",
+          "val": 50, 
+          "description": "",
+          "img": "/imgs/people3/gauri.png",
           "url": ""
         },
         { 
           "id": "garrett",
           "val": 50, 
           "description": "",
-          "img": "/imgs/people2/garrett.jpeg",
+          "img": "/imgs/people3/garrett.png",
           "url": "https://www.garrettlee.me"
         },
         { 
           "id": "grace",
           "val": 50, 
           "description": "",
-          "img": "/imgs/people2/grace.jpeg",
+          "img": "/imgs/people3/grace.png",
           "url": ""
         },
         { 
@@ -140,28 +160,35 @@
           "id": "jackie",
           "val": 50, 
           "description": "",
-          "img": "/imgs/people2/jackie.jpeg",
+          "img": "/imgs/people3/jackie.png",
+          "url": ""
+        },
+        { 
+          "id": "jessica",
+          "val": 50, 
+          "description": "",
+          "img": "/imgs/people3/jessica.png",
           "url": ""
         },
         { 
           "id": "jaden",
           "val": 50, 
           "description": "",
-          "img": "/imgs/people2/jaden.jpeg",
+          "img": "/imgs/people3/jaden.png",
           "url": ""
         },
         { 
           "id": "jennie",
           "val": 50, 
           "description": "",
-          "img": "/imgs/people2/jennie.jpeg",
+          "img": "/imgs/people3/jennie.png",
           "url": ""
         },
         { 
           "id": "joy",
           "val": 50, 
           "description": "",
-          "img": "/imgs/people2/joy.jpeg",
+          "img": "/imgs/people3/joy.png",
           "url": ""
         },
         { 
@@ -175,42 +202,42 @@
           "id": "kenneth",
           "val": 50, 
           "description": "",
-          "img": "/imgs/people2/kenneth.jpeg",
+          "img": "/imgs/people3/kenneth.png",
           "url": ""
         },
         { 
           "id": "kevin",
           "val": 50, 
           "description": "",
-          "img": "/imgs/people2/kevin.jpeg",
+          "img": "/imgs/people3/kevin.png",
           "url": ""
         },
         { 
           "id": "luke",
           "val": 50, 
           "description": "",
-          "img": "/imgs/people2/luke.jpeg",
+          "img": "/imgs/people3/luke.png",
           "url": ""
         },
         { 
           "id": "mark",
           "val": 50, 
           "description": "",
-          "img": "/imgs/people2/mark.jpeg",
+          "img": "/imgs/people3/mark.png",
           "url": ""
         },
         { 
           "id": "michele",
           "val": 50, 
           "description": "",
-          "img": "/imgs/people2/michele.jpeg",
+          "img": "/imgs/people3/michele.png",
           "url": ""
         },
         { 
           "id": "phil",
           "val": 50, 
           "description": "",
-          "img": "/imgs/people2/phil.jpeg",
+          "img": "/imgs/people3/phil.png",
           "url": ""
         },
         { 
@@ -224,7 +251,14 @@
           "id": "sonya",
           "val": 50, 
           "description": "",
-          "img": "/imgs/people2/sonya.jpeg",
+          "img": "/imgs/people3/sonya.png",
+          "url": ""
+        },
+        { 
+          "id": "sophie",
+          "val": 50, 
+          "description": "",
+          "img": "/imgs/people3/sophie.png",
           "url": ""
         },
         { 
@@ -246,6 +280,13 @@
           "val": 50, 
           "description": "",
           "img": "/imgs/people3/zeqe.png",
+          "url": ""
+        },
+        { 
+          "id": "alyssa",
+          "val": 50, 
+          "description": "",
+          "img": "/imgs/people3/alyssa.png",
           "url": ""
         }
         
@@ -270,6 +311,10 @@
             "target": "viviana"
         },
         {
+          "source":"communications",
+          "target": "alyssa"
+        },
+        {
             "source": "communications",
             "target": "melissa"
         },
@@ -287,11 +332,19 @@
         },
         {
             "source": "communications",
+            "target": "rebecca"
+        },
+        {
+            "source": "communications",
             "target": "serena"
         },
         {
             "source": "communications",
             "target": "amy"
+        },
+        {
+            "source": "communications",
+            "target": "gauri"
         },
         {
             "source": "communications",
@@ -304,6 +357,10 @@
         {
             "source": "communications",
             "target": "jackie"
+        },
+        {
+            "source": "communications",
+            "target": "jessica"
         },
         {
             "source": "communications",
@@ -340,6 +397,10 @@
         {
             "source": "communications",
             "target": "sam"
+        },
+        {
+            "source": "communications",
+            "target": "sophie"
         },
         {
             "source": "products",
